@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    background-image: url("./img/pexels-bertellifotografia-799443\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}  
+
+
+.container-principal {
+    padding: 10px;
+    max-width: 450px ;
+    width: 95%;
+    border-radius: 30px;
+    background-color: rgb(236, 229, 229);
+    box-shadow: 20px 30px 20px 9px rgba(0,0,0,0.56);
+-webkit-box-shadow: 20px 30px 20px 9px rgba(0,0,0,0.56);
+-moz-box-shadow: 20px 30px 20px 9px rgba(0,0,0,0.56);
+    transform: translate(0%);
+    transition: 1s;
+    opacity: 0.8;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container-combustiveis {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+
+.txt-etanol-gasolina {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input-etanol-gasolina {
+    padding: 6px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: none;
+    
+}
+
+.btn-calcular-combustiveis {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(12, 12, 12);
+    background: linear-gradient(to bottom, #dee0e2, #ff0000);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    
+}
+
+.btn-calcular-combustiveis:hover {
+   transform: translateY(-3px);
+   background: linear-gradient(to bottom, #dee0e2,#266b45);
+    
+}
+
+.text-resultado-combustiveis {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(56, 146, 71);
+    margin-left: 30px;
+}
+
+.txt-destinokm {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input-destinokm {
+    margin-top: 5px;
+    padding: 6px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+.txt-resFinal {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(56, 146, 71);
+}
+
+@media (max-width:786px) {
+    .input-etanol-gasolina{
+        max-width: 150px;
+    }
+}
+
